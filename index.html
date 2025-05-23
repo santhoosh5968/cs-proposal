@@ -66,25 +66,13 @@
             gap: 15px; /* Spacing between elements on the cover page */
         }
 
-        /* New Logo and Caption Styles */
+        /* New Logo Styles - Increased size, removed caption/text specific styles */
         #cover .company-logo-img {
-            width: 400px; /* Increased size for better visibility of company name */
+            width: 550px; /* Increased size significantly */
             height: auto;
-            margin-bottom: 10px; /* Space below logo */
-            /* REMOVED: border-radius, box-shadow, background, padding to remove the box */
+            margin-bottom: 30px; /* Adjusted space below logo to main title */
         }
-        #cover .company-caption {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 20px; /* Space below caption */
-        }
-
-        #cover .company-name-text { /* Style for "Covenant Synergy" text */
-            font-size: 2.5em;
-            font-weight: bold;
-            color: #003459; /* Matching main blue */
-            margin-bottom: 10px;
-        }
+        /* Removed .company-caption and .company-name-text styles as elements are removed */
 
         #cover h1 { /* Main title on cover page "Salesforce Solutions Proposal" */
             color: #003459;
@@ -235,12 +223,11 @@
             .slide h2 { font-size: 1.8em; }
             .slide p { font-size: 1em; }
             
-            #cover .company-name-text { font-size: 1.8em; }
             #cover h1 { font-size: 2.5em; }
             #cover .tagline { font-size: 1.1em; }
             
             #expertise .expertise-grid { grid-template-columns: 1fr; }
-            .company-logo-img { width: 300px; } /* Adjust logo size for smaller screens */
+            .company-logo-img { width: 350px; } /* Adjust logo size for smaller screens */
         }
         @media (max-width: 480px) {
             .slide { padding: 30px 15px; min-height: calc(100vh - 60px); }
@@ -248,7 +235,6 @@
             .slide h2 { font-size: 1.5em; }
             .slide p { font-size: 0.9em; }
             
-            #cover .company-name-text { font-size: 1.5em; }
             #cover h1 { font-size: 2em; }
             #cover .tagline { font-size: 1em; }
             
@@ -260,16 +246,13 @@
             .approach-step { width: 100%; }
             .cta-button { padding: 12px 25px; font-size: 1.1em; }
             
-            .company-logo-img { width: 250px; } /* Further adjust logo size for mobile */
+            .company-logo-img { width: 300px; } /* Further adjust logo size for mobile */
         }
     </style>
 </head>
 <body>
     <section id="cover" class="slide">
         <img src="Logo-Caption.png" alt="Covenant Synergy Logo" class="company-logo-img">
-       
-
-        <div class="company-name-text">Covenant Synergy</div>
         
         <h1>Salesforce Solutions Proposal</h1>
         
